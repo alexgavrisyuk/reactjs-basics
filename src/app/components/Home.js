@@ -23,6 +23,8 @@ export default class Home extends React.Component {
                 <big class="text-muted">> This is Home Component. Yeah !! </big>
 
                 <button onClick={() => this.onMakeSmarted()} className="btn btn-primary"> Make me smart !</button>
+
+                <button onClick={() => this.props.alert()} className="btn btn-primary"> Show Alert</button>
             </div>
         );
     }

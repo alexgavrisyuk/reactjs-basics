@@ -6,6 +6,11 @@ import Footer from './components/Footer';
 import Body from './components/Body';
 
 class App extends React.Component {
+
+    onShowAlert() {
+        alert("Hi ho from parent component !");
+    };
+
     render(){
         var header = {
             first: "Order Name",
@@ -45,7 +50,7 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Home initialIq={iq}/>
+                        <Home initialIq={iq} alert={this.onShowAlert}/>
                     </div>
                 </div>
 
