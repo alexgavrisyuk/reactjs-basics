@@ -2,13 +2,19 @@ import React from 'react'
 
 export default class Home extends React.Component {
     constructor(props) {
+        console.log(props);
         super();
-        this.iq = props.iq;
+        this.state = {
+            iq: props.initialIq,
+            status: 0
+        };
     }
 
     onMakeSmarted() {
-        this.iq += 10;
-        console.log(this.iq);
+        this.setState({
+            iq: this.state.iq + 10
+        });
+        console.log(this.state.iq);
     }
 
     render() {
