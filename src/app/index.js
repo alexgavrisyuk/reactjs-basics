@@ -34,6 +34,8 @@ class App extends React.Component {
         var orders = [];
         orders.push(firstOrder, secondOrder, thirdOrder);
 
+        var iq = 100;
+
         return(
             <div className="container">
                 <div className="row">
@@ -43,7 +45,7 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Home/>
+                        <Home iq={iq}/>
                     </div>
                 </div>
 
